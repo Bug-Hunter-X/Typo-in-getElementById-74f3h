@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrectly attempting to access a non-existent element
+    const myElement = document.getElementByIdx('myDiv'); //Typo in getElementById
+    myElement.innerHTML = "Hello, world!";
+  </script>
+</body>
+</html>
